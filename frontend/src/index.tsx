@@ -7,8 +7,9 @@ import SingleCharacter from './Pages/SingleCharacter.tsx';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
+  createRoutesFromElements, 
   RouterProvider,
-  Route,
+  Route
 } from "react-router-dom";
 
 const router = createBrowserRouter(
