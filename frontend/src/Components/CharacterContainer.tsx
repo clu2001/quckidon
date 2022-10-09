@@ -1,8 +1,12 @@
-import React from "react"
+import React from "react"; 
 import { useDynamicWindowDimensions } from "../Utilities/Utilities.tsx"
+import CharacterComponent from "CharacterComponent.tsx"
 
-const HomeComponent = () => {
+
+const CharacterContainer = ( characterComponent ) => {
     const { height, width } = useDynamicWindowDimensions();
+
+    const left: boolean = false; 
 
     const componentStyle = {
         width: `${width}px`,
@@ -10,12 +14,10 @@ const HomeComponent = () => {
         backgroundColor: `#1DA1F2`,
     }
 
-
     return (
-    <div>
-        <div style={componentStyle}>Hello</div>
-        <div style={componentStyle}>Good bye</div>
+    <div style={componentStyle}>
+        <CharacterComponent location={left}/>
     </div>); 
 }
 
-export default HomeComponent; 
+export default CharacterContainer; 

@@ -1,10 +1,10 @@
 import React from "react"
-import HomeComponent from "../Components/HomeComponent.tsx"
+import HomeContainer from "../Components/HomeContainer.tsx"
 
 const Home = () => {
   return (
     <div>
-      <HomeComponent />
+      <HomeContainer />
     </div>); 
 }
 
