@@ -2,12 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './Pages/Home.tsx';
+import CharacterGallery from './Pages/CharacterGallery.tsx';
+import SingleCharacter from './Pages/SingleCharacter.tsx';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Home />}>
+      <Route path="original-characters" element={<CharacterGallery />} />
+      <Route path="character" element={<SingleCharacter />} />
+    </Route>
+  )
+);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
