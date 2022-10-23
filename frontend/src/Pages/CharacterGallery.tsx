@@ -1,5 +1,5 @@
 import React from "react"; 
-import CharacterComponent from "../CharacterComponent"; 
+import CharacterContainer from "../Components/CharacterContainer.tsx"; 
 
 // page where it has a gallery of all the different types of characters 
 const CharacterGallery = () => {
@@ -8,7 +8,7 @@ const CharacterGallery = () => {
 
     return (
     <div>
-        <CharacterComponent />
+        <CharacterContainer />
     </div>); 
 
 }

@@ -7,12 +7,13 @@ const HomeContainer = () => {
     const componentStyle = {
         width: `${width}px`,
         height: `${height}px`,
-        backgroundColor: `#1DA1F2`,
     }
 
 
     return (
-        <div style={componentStyle}></div>); 
+        <div style={componentStyle}>
+            bye
+        </div>); 
 }
 
 export default HomeContainer; 

@@ -15,7 +15,7 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Home />}>
-      <Route path="original-characters" element={<CharacterGallery />} />
+      <Route path="originalCharacters" element={<CharacterGallery />} />
       <Route path="character" element={<SingleCharacter />} />
     </Route>
   )
