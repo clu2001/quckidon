@@ -1,5 +1,6 @@
 import React from "react"; 
 
+// page for each individual character 
 
 const SingleCharacter = () => {
 
