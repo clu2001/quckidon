@@ -7,7 +7,7 @@ import CharacterComponent from "./CharacterComponent.tsx"
 const CharacterContainer = ( characterComponent ) => {
     const { height, width } = useDynamicWindowDimensions();
 
-    const left: boolean = true; 
+    const left: boolean = false; 
 
     const charsList = ["Jack", "Maria", "Julian", "Johannes"]
 

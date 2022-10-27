@@ -1,26 +1,16 @@
 import React from "react"; 
 // profile of a character (image)
-const CharacterComponent = ( left: boolean ) => {
-    var styling = {
-        gridColumnStart: `1`, 
-        backgroundColor: 'lightblue'
-    }
+const CharacterComponent = ( props: left ) => {
 
-    if (left) {
-        styling = {
-            gridColumnStart: `2`, 
-            backgroundColor: 'lightblue'
-        }
-    }
 
-    console.log(styling)
+    console.log(props.left)
 
     return (
-        <div style={styling}>
+        <div style={{gridColumnStart: props.left ? '1' : '2'}}>
             Hello
-            
         </div>
-        ); 
+    ); 
+
 }
 
 export default CharacterComponent; 
