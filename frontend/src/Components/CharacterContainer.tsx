@@ -15,7 +15,7 @@ const CharacterContainer = ( characterComponent ) => {
         width: `${width}px`,
         height: `${height}px`,
         backgroundColor: `#8B008B`,
-        display: grid, 
+        display: 'grid', 
         gridTemplateColumns: `1fr 1fr`, 
         gridTemplateRows: `1fr`
     }
