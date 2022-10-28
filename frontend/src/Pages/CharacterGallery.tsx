@@ -8,7 +8,8 @@ const CharacterGallery = () => {
 
     return (
     <div>
-        <CharacterContainer />
+        <CharacterContainer left={true}/>
+        <CharacterContainer left={false}/>
     </div>); 
 
 }

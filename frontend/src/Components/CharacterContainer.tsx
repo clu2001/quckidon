@@ -4,12 +4,8 @@ import CharacterComponent from "./CharacterComponent.tsx"
 
 
 // container div for where a single character component is kept in 
-const CharacterContainer = ( characterComponent ) => {
+const CharacterContainer = ( props: left ) => {
     const { height, width } = useDynamicWindowDimensions();
-
-    const left: boolean = false; 
-
-    const charsList = ["Jack", "Maria", "Julian", "Johannes"]
 
     const componentStyle = {
         width: `${width}px`,
@@ -22,7 +18,7 @@ const CharacterContainer = ( characterComponent ) => {
 
     return (
     <div style={componentStyle}>
-        <CharacterComponent left={left}/>
+        <CharacterComponent left={props.left} character={"Jack"} />
     </div>); 
 }
 
