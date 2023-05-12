@@ -12,7 +12,7 @@ const HomeContainer = () => {
 
     return (
         <div style={componentStyle}>
-            bye
+            Home
         </div>); 
 }
 

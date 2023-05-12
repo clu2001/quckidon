@@ -4,7 +4,9 @@ import React from "react";
 
 const SingleCharacter = () => {
 
-    return (<div></div>); 
+    return (<div>
+        Single Character
+    </div>); 
 
 }
 
