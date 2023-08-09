@@ -1,5 +1,7 @@
 import React from "react"
+import Button from '@mui/material/Button';
 import { useDynamicWindowDimensions } from "../Utilities/Utilities.tsx"
+import TextField from '@mui/material/TextField';
 
 const HomeContainer = () => {
     const { height, width } = useDynamicWindowDimensions();
@@ -9,11 +11,12 @@ const HomeContainer = () => {
         height: `${height}px`,
     }
 
-
     return (
         <div style={componentStyle}>
-            Home
+            <Button variant="outlined">Outlined</Button>
+            <TextField id="outlined-basic" label="Outlined" variant="outlined" />
         </div>); 
+        
 }
 
 export default HomeContainer; 
