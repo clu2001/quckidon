@@ -15,6 +15,7 @@ const HomeContainer = () => {
         <div style={componentStyle}>
             <Button variant="outlined">Outlined</Button>
             <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+            <Button variant="Admin button">Outlined</Button>
         </div>); 
         
 }
